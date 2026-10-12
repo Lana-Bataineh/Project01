@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content= "width=device-width , initial-scale=1.0">
+		<title>Registration Form</title>
+	</head>
+
+	<body>
+		<h1> Registration Form :</h1>
+		<br>
+
+		<form>
+
+			<label for="FullName">Full Name :	</label>
+			<input type="text" id="FullName" name="FullName" minlength="1" required>
+			<br>
+			<br>
+
+			<label for="Email">Email 	:</label>
+			<input type="email" id="Email" name="email" required>
+                        <br>
+			<br>
+
+			<label for="Password">Password :	</label>
+                        <input type="password" id="Password" name="password" minlength="8" required>
+                        <br>
+			<br>
+
+			<p>Gender : </p>
+
+                        <input type="radio" id="Female" name="Gender" value="female" required>
+			<label for="Female">Female</label>
+			<br>
+
+			<input type="radio" id="Male" name="Gender" value="male">
+                        <label for="Male">Male</label>
+			<br>
+			<br>
+
+			<label for="Major">Choose Your Major :	</label>
+
+			<select name="ITMajores" id="Major" required>
+				<option value="">--Select your major--</option>
+				<option value="CS">Computer Science</option>
+				<option value="CompEng">Computer Engineering</option>
+				<option value="SoftEng">Software Engineering</option>
+				<option value="AI">Artificial Intelligence</option>
+				<option value="DataSc">Data Science</option>
+			</select>
+			<br>
+			<br>
+			<br>
+			<label for="experience">Describe your experience :</label>
+			<br>
+			<textarea id="experience" name="experience" rows="8" cols="65" placeholder="Share your experience with us ..." required></textarea>
+			<br>
+			<br>
+			<br>
+			<input type="checkbox" id="Agreement" name="agree" required>
+			<label for="Agreement">I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and consent to the storage of my data.</label>
+			<br>
+			<br>
+			<br>
+			<button type="submit">Submit</button>
+		</form>
+	</body>
+</html>
+
+
